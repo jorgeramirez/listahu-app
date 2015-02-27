@@ -34,7 +34,7 @@ angular.module('ListaHuApp')
         fixWidth(item);
 
         $(window).resize(function() {
-            clearTimeout(fixWidth);
+            clearTimeout(resizeFinish);
             resizeFinish = setTimeout( function () {
                 fixWidth(item);
             }, 11);
