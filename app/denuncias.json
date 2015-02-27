@@ -1,0 +1,16 @@
+[{
+  "numero": "595982112233",
+  "screenshot": "http://listahu.org/media/denuncias/595986613339_201502251906_1424901922033-220131806.jpg",
+  "desc": "se me robo adsf asdf as df as df asdf  asdf a sd fa sdf",
+  "tipo": "estafa"
+},{
+  "numero": "595986613339",
+  "screenshot": "http://listahu.org/media/denuncias/595986716670_201502252119_Screenshot_2015-02-25-21-17-14.png",
+  "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed feugiat consectetur pellentesque. Nam ac elit risus, ac blandit dui. Duis rutrum porta tortor ut convallis.",
+  "tipo": "extorsión"
+},{
+  "numero": "595975613456",
+  "screenshot": "http://listahu.org/media/denuncias/595975613456_201502252155_image.jpg",
+  "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed feugiat consectetur pellentesque. Nam ac elit risus, ac blandit dui. Duis rutrum porta tortor ut convallis.",
+  "tipo": "extorsión"
+}]

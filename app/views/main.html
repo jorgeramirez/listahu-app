@@ -1,45 +1,58 @@
 <div class="isotope">
-  <div class="item">
+  <div ng-repeat="c in complaints" on-finish-render class="item">
     <div class="pin">
       <div class="pin-header">
-        <span class="label label-danger">estafa</span>
-        <p>595986613339</p>
+        <span class="label label-danger">{{c.tipo}}</span>
+        <p>{{c.numero}}</p>
       </div>
-      <img src="http://listahu.org/media/denuncias/595986613339_201502251906_1424901922033-220131806.jpg">
-      <p>
-        Fue una llamada a mi linea baja y no tengo miraquienllama, a este numero me 
-        dijeron que mande 1000000 por giros tigo
-      </p>
+      <img src="{{c.screenshot}}" />
+      <p>{{c.desc}}</p>
     </div>
   </div> 
-  
-  <div class="item">
-    <div class="pin">
-      <div class="pin-header">
-        <span class="label label-danger">extorsión</span>
-        <p>595986613339</p>
-      </div>
-      <img src="http://listahu.org/media/denuncias/595986716670_201502252119_Screenshot_2015-02-25-21-17-14.png">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Sed feugiat consectetur pellentesque. Nam ac elit risus, 
-        ac blandit dui. Duis rutrum porta tortor ut convallis.
-      </p>
-    </div>
-  </div>  
-  
-  <div class="item">
-    <div class="pin">
-      <div class="pin-header">
-        <span class="label label-danger">spam</span>
-        <p>595975613456</p>
-      </div>
-      <img src="http://listahu.org/media/denuncias/595975613456_201502252155_image.jpg">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Sed feugiat consectetur pellentesque. Nam ac elit risus, 
-        ac blandit dui. Duis rutrum porta tortor ut convallis.
-      </p>
-    </div>
-  </div>  
 </div>
+
+<!--<div class="isotope">-->
+  <!--<div class="item">-->
+    <!--<div class="pin">-->
+      <!--<div class="pin-header">-->
+        <!--<span class="label label-danger">estafa</span>-->
+        <!--<p>595986613339</p>-->
+      <!--</div>-->
+      <!--<img src="http://listahu.org/media/denuncias/595986613339_201502251906_1424901922033-220131806.jpg">-->
+      <!--<p>-->
+        <!--Fue una llamada a mi linea baja y no tengo miraquienllama, a este numero me -->
+        <!--dijeron que mande 1000000 por giros tigo-->
+      <!--</p>-->
+    <!--</div>-->
+  <!--</div> -->
+  
+  <!--<div class="item">-->
+    <!--<div class="pin">-->
+      <!--<div class="pin-header">-->
+        <!--<span class="label label-danger">extorsión</span>-->
+        <!--<p>595986613339</p>-->
+      <!--</div>-->
+      <!--<img src="http://listahu.org/media/denuncias/595986716670_201502252119_Screenshot_2015-02-25-21-17-14.png">-->
+      <!--<p>-->
+        <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit. -->
+        <!--Sed feugiat consectetur pellentesque. Nam ac elit risus, -->
+        <!--ac blandit dui. Duis rutrum porta tortor ut convallis.-->
+      <!--</p>-->
+    <!--</div>-->
+  <!--</div>  -->
+  
+  <!--<div class="item">-->
+    <!--<div class="pin">-->
+      <!--<div class="pin-header">-->
+        <!--<span class="label label-danger">spam</span>-->
+        <!--<p>595975613456</p>-->
+      <!--</div>-->
+      <!--<img src="http://listahu.org/media/denuncias/595975613456_201502252155_image.jpg">-->
+      <!--<p>-->
+        <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit. -->
+        <!--Sed feugiat consectetur pellentesque. Nam ac elit risus, -->
+        <!--ac blandit dui. Duis rutrum porta tortor ut convallis.-->
+      <!--</p>-->
+    <!--</div>-->
+  <!--</div>  -->
+<!--</div>-->

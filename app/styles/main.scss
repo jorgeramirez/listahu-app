@@ -94,6 +94,7 @@ body {
 /* ---- isotope ---- */
 
 .isotope {
+  position: relative;
 }
 
 /* clear fix */
@@ -107,7 +108,7 @@ body {
 .item {
   float: left;
   width: 50%;
-  position: relative;
+  position: absolute;
 }
 
 .pin {
