@@ -20,7 +20,6 @@ angular.module('ListaHuApp')
     }
 
     $scope.$on('ngRepeatAfterRender', function() {
-      var resizeFinish;
       var items = $('.item');
       if(items.length) {
         var item = $(items[0]);
@@ -34,10 +33,9 @@ angular.module('ListaHuApp')
         fixWidth(item);
 
         $(window).resize(function() {
-            clearTimeout(resizeFinish);
-            resizeFinish = setTimeout( function () {
+            setTimeout( function () {
                 fixWidth(item);
-            }, 11);
+            }, 10);
         });
       }
     });

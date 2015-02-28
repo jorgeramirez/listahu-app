@@ -11,8 +11,8 @@
 angular.module('ListaHuApp').factory('ComplaintsService',
 
   function ($resource, Config) {
-      //var ComplaintsService = $resource(Config.apiURL + '/denuncias/', {}, {
       var ComplaintsService = $resource('/denuncias.json', {}, {
+      //var ComplaintsService = $resource(Config.apiURL + '/denuncias/', {}, {
         query: {
           method: 'GET', isArray: true
         }
