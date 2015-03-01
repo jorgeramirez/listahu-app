@@ -17,9 +17,9 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
-  .constant('Config', {
+  /*.constant('Config', {
     apiURL: 'http://listahu.org/api/v1'
-  })
+  })*/
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
