@@ -6,7 +6,7 @@
 (function($, angular) {
 
   angular.element(document).ready(function () {
-    
+
     $.getJSON('/config.json', function(configs) {
       
       angular.module('ListaHuApp').factory('Config',

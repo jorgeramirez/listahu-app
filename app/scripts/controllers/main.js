@@ -12,11 +12,17 @@ angular.module('ListaHuApp')
 
     var complaints = ComplaintsService.query();
     $scope.complaints = complaints;
-    
-    function fixWidth(item) {
-      var width = item.css('width');
-      width = parseInt(width.substr(0, width.search('px')));
-      item.find('.pin').css('width', (width - 4) + 'px');
+
+    function fixWidth(items) {
+      // we ensure that all element have the same width
+      var maxWidth = "", w;
+
+      for(var i = 0; i < items.length; i++) {
+        w = $(items[i]).css('width');
+        maxWidth = maxWidth < w ? w : maxWidth; 
+      }
+      maxWidth = parseInt(maxWidth.substr(0, maxWidth.search('px')));
+      $('.item .pin').css('width', (maxWidth - 4) + 'px');
     }
 
     $scope.$on('ngRepeatAfterRender', function() {
@@ -27,14 +33,12 @@ angular.module('ListaHuApp')
           no_columns: 2,
           single_column_breakpoint: item.width()
         });
-
-        // fix the width of the first element of the 
-        // pinterest-like grid
-        fixWidth(item);
+        // fix width of all elements in the grid
+        fixWidth(items);
 
         $(window).resize(function() {
             setTimeout( function () {
-                fixWidth(item);
+                fixWidth(items);
             }, 10);
         });
       }
