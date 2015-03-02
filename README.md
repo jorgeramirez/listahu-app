@@ -1,9 +1,6 @@
 # listahu-app
 
-For now, just a mock-up for [listahu.org](http://listahu.org/)
-
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.11.1.
+Mobile webapp for [listahu.org](http://listahu.org/). Still under development.
 
 ## Build & development
 
